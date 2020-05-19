@@ -2,19 +2,29 @@
   "name": "emery_thompson",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://eugenere95.github.io/emery-thompson-demo",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.0",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "gh-pages": "^2.2.0",
+    "leaflet": "^1.6.0",
+    "node-sass": "^4.13.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-multi-carousel": "^2.5.5",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.4.1",
+    "wowjs": "^1.1.3"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
