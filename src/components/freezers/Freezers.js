@@ -12,7 +12,7 @@ export class Freezers extends Component {
     render() {
         return (
             <div id="freezers">
-                <h1>Our Product Line</h1>
+                <h1 className="animated fadeInLeftBig">Our Product Line</h1>
                 <div className="freezers-container">
                     <FreezerItem picture={pic1} model="CB-200" vol="3-Quart Batch Freezer" price="$6,950" route="/freezers/CB-200"/>
                     <FreezerItem picture={pic2} model="CB-350" vol="6-Quart Batch Freezer" price="$11,500" route="/freezers/CB-350" />

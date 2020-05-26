@@ -8,7 +8,7 @@ function UsedMachines() {
     return (
         <div id="used-machines">
             <div className="container">
-                <h1>Used Batch Freezers</h1>
+                <h1 className="animated fadeInLeftBig">Used Batch Freezers</h1>
                 <h2>As in THE PROBLEM with used batch freezers...</h2>
                 <h2>"IMPORTANT MESSAGE FROM EMERY THOMPSON"</h2>
                 <p>Are you looking for a used Emery Thompson Batch Freezer? Well, you're not alone! Out of the 40 or more phone calls I take in a given day, 15 of them are looking at used. At any given moment there are over 80 used "other" batch freezers on eBay…but no Emery Thompson’s. Well, to be fair there are three used ET’s up there  but they’re older than me! Emery Thompson is the most sought after batch freezer in the world!</p>

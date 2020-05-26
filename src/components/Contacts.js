@@ -22,7 +22,7 @@ export class Contacts extends Component {
     render() {
         return (
             <div id="contacts">
-                <h1>Contacts</h1>
+                <h1 className="animated fadeInLeftBig">Contacts</h1>
                 <div className="container">
                     <div className="about">
                         <h2>Steve Thompson, President/CEO</h2>

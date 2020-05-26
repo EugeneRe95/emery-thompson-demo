@@ -1,7 +1,7 @@
 $red: #b22234;
 $blue: #3c3b6e;
 $main-font: 'Roboto', sans-serif;
-$heading-font: "Concert One", cursive;
+$heading-font: 'Carter One', cursive;
 
 html {
   height: 100%;
@@ -45,16 +45,17 @@ header {
   #logo {
     display: flex;
     align-items: center;
-    font-size: 40px;
+    font-size: 35px;
     transition: all ease-in-out 100ms;
     font-family: $heading-font;
+    margin-right: 15px;
     &:hover {
       color: $red;
       text-shadow: 0 0 2px $blue;
     }
 
     @media screen and (max-width: 488px) {
-      font-size: 30px;
+      font-size: 25px;
       margin-left: 15px !important;
     }
     img {
@@ -102,21 +103,16 @@ header {
       display: flex;
       justify-content: space-around;
       align-items: center;
-      width: 100%;
-      max-width: 900px;
       font-size: 18px;
       text-align: center;
       li {
-        margin: 5px;
+        margin: 0 5px;
         transition: transform ease-in-out 200ms;
-        border-radius: 6px;
         position: relative;
-        height: auto;
         a {
-          display: block;
-          height: 100%;
+          display: inline-block;
           width: 100%;
-          border-radius: inherit;
+          border-radius: 4px;
           padding: 4px;
           &.active {
             background-color: $blue;
@@ -367,9 +363,12 @@ footer {
           transform: rotateZ(360deg);
         }
       }
-      @media screen and (max-width: 600px) {
+      @media screen and (max-width: 800px) {
         font-size: 30px;
         margin: 40px auto;
+      }
+      @media screen and (max-width: 600px) {
+        font-size: 25px;
       }
     }
   }
@@ -438,6 +437,7 @@ footer {
       }
       .react-multiple-carousel__arrow--right {
         right: 0px;
+        top: 45%;
         background: rgba(60, 59, 110, 0.6);
         z-index: 250;
         &:hover {
@@ -446,6 +446,7 @@ footer {
       }
       .react-multiple-carousel__arrow--left {
         left: 0px;
+        top: 45%;
         background: rgba(60, 59, 110, 0.6);
         z-index: 250;
         &:hover {
@@ -590,7 +591,7 @@ footer {
 #suppliers {
   display: flex;
   .container {
-    margin: 80px auto;
+    margin: 40px auto;
     width: 90%;
     max-width: 1200px;
 
@@ -599,6 +600,10 @@ footer {
       h1 {
         margin: 15px;
         text-align: center;
+        color: #fff;
+        background: $blue;
+        padding: 5px;
+        border-radius: 10px;
       }
     }
 
