@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/emery-thompson-demo/precache-manifest.9447d2dcb21f3cf38caa930311da74fd.js"
+  "/emery-thompson-demo/precache-manifest.878117295a37677d115d554d8fc1181e.js"
 );
 
 self.addEventListener('message', (event) => {
