@@ -3,11 +3,9 @@ import React from 'react'
 function Suppliers() {
     return (
         <div id="suppliers">
+            <h1 className="animated fadeInLeftBig">WHERE TO BUY THE BEST ?</h1>
             <div className="container">
-                <div className="heading">
-                    <h1 className="animated fadeInLeftBig">WHERE TO BUY THE BEST ?</h1>
-                    <p>Over many years, my customers have shared with me where they buy the best products and obtain the best services for their frozen dessert businesses. The following is a list of where to buy the best for your business. Please contact me for additional recommendations or to add your favorite supplier to our list. 718-588-7300.</p>
-                </div>
+                    <p className="heading">Over many years, my customers have shared with me where they buy the best products and obtain the best services for their frozen dessert businesses. The following is a list of where to buy the best for your business. Please contact me for additional recommendations or to add your favorite supplier to our list. 718-588-7300.</p>
                 <div className="suppliers">
                     {suppliers.map(item => (
                         <div className="item">

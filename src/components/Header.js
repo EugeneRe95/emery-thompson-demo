@@ -24,7 +24,7 @@ export class Header extends Component {
                 body.style.overflowY='auto'
                 setTimeout(() => {
                     this.setState({ mobileMenu: '' })
-                }, 800)
+                }, 700)
             })
         } else {
             body.style.overflowY='hidden'
@@ -36,7 +36,7 @@ export class Header extends Component {
             body.style.overflowY='auto'
             setTimeout(() => {
                 this.setState({ mobileMenu: '' })
-            }, 800)
+            }, 700)
         })
     }
     render() {
@@ -61,6 +61,7 @@ export class Header extends Component {
                                 <li><NavLink to='/suppliers' activeClassName="active" exact>Key suppliers</NavLink></li>
                                 <li><a href="https://nebula.wsimg.com/ef52e1891fa49698a26194bc62f9d209?AccessKeyId=3852EE9A40CCFB24DDD0&disposition=0&alloworigin=1" target="_blank" rel="noopener noreferrer">Recipes</a></li>
                                 <li><NavLink to='/used-machines' activeClassName="active" exact>Used machines</NavLink></li>
+                                <li><NavLink to='/exclusive-ioc' activeClassName="active" exact>Exclusive  I.O.C.</NavLink></li>
                             </ul>
                         </li>
                         <li><NavLink to='/contacts' activeClassName="active" exact>Contacts</NavLink></li>
@@ -74,10 +75,11 @@ export class Header extends Component {
                 {(this.state.mobileMenu === 'active' && this.state.windowWidth < 960) ?
                     <div className={"mobile-menu animated " + this.state.menuAnim}>
                         <div className="container">
-                            <NavLink to='/' className="animated fadeInDownBig" style={{ animationDelay: '600ms' }} onClick={this.hideMenu}>Home</NavLink>
-                            <NavLink to='/freezers' className="animated fadeInDownBig" style={{ animationDelay: '500ms' }} onClick={this.hideMenu}>Batch freezers</NavLink>
-                            <NavLink to='/suppliers' className="animated fadeInDownBig" style={{ animationDelay: '400ms' }} onClick={this.hideMenu}>Key suppliers</NavLink>
-                            <a href="https://nebula.wsimg.com/ef52e1891fa49698a26194bc62f9d209?AccessKeyId=3852EE9A40CCFB24DDD0&disposition=0&alloworigin=1" target="_blank" rel="noopener noreferrer" className="animated fadeInDownBig" style={{ animationDelay: '300ms' }} onClick={this.hideMenu}>Recipes</a>
+                            <NavLink to='/' className="animated fadeInDownBig" style={{ animationDelay: '700ms' }} onClick={this.hideMenu}>Home</NavLink>
+                            <NavLink to='/freezers' className="animated fadeInDownBig" style={{ animationDelay: '600ms' }} onClick={this.hideMenu}>Batch freezers</NavLink>
+                            <NavLink to='/suppliers' className="animated fadeInDownBig" style={{ animationDelay: '500ms' }} onClick={this.hideMenu}>Key suppliers</NavLink>
+                            <a href="https://nebula.wsimg.com/ef52e1891fa49698a26194bc62f9d209?AccessKeyId=3852EE9A40CCFB24DDD0&disposition=0&alloworigin=1" target="_blank" rel="noopener noreferrer" className="animated fadeInDownBig" style={{ animationDelay: '400ms' }} onClick={this.hideMenu}>Recipes</a>
+                            <NavLink to='/exclusive-ioc' className="animated fadeInDownBig" style={{ animationDelay: '300ms' }} onClick={this.hideMenu}>Exclusive  I.O.C.</NavLink>
                             <NavLink to='/used-machines' className="animated fadeInDownBig" style={{ animationDelay: '200ms' }} onClick={this.hideMenu}>Used machines</NavLink>
                             <NavLink to='/contacts' className="animated fadeInDownBig" style={{ animationDelay: '100ms' }} onClick={this.hideMenu}>Contacts</NavLink>
                         </div>

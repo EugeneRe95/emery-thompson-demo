@@ -15,6 +15,8 @@ import UsedMachines from './components/UsedMachines'
 import Testimonials from './components/Testimonials'
 import News from './components/News'
 import Faq from './components/Faq'
+import Ioc from './components/Ioc'
+import ScrollToTop from './components/ScrollToTop'
 
 import pic1 from './img/freezers/quart3.png'
 import pic2 from './img/freezers/quart6.png'
@@ -25,28 +27,31 @@ import pic6 from './img/freezers/quart2.png'
 import WOW from 'wowjs';
 
 export class App extends Component {
-  componentDidMount(){
+  componentDidMount() {
     new WOW.WOW().init();
   }
   render() {
     return (
-      <Router onUpdate={() => window.scrollTo(0, 0)}>
-        <Header />
-        <Route exact path="/" component={Home} />
-        <Route exact path="/freezers" component={Freezers} />
+      <Router>
+        <ScrollToTop>
+          <Header />
+          <Route exact path="/" component={Home} />
+          <Route exact path="/freezers" component={Freezers} />
           <Route path="/freezers/CB-200" render={() => { return <FreezerSpecifc data={freezersData[0]} /> }} />
           <Route path="/freezers/CB-350" render={() => { return <FreezerSpecifc data={freezersData[1]} /> }} />
           <Route path="/freezers/12NW-12LA" render={() => { return <FreezerSpecifc data={freezersData[2]} /> }} />
           <Route path="/freezers/24NW-24LA" render={() => { return <FreezerSpecifc data={freezersData[3]} /> }} />
           <Route path="/freezers/44BLT" render={() => { return <FreezerSpecifc data={freezersData[4]} /> }} />
           <Route path="/freezers/CB-100" render={() => { return <FreezerSpecifc data={freezersData[5]} /> }} />
-        <Route path="/suppliers" component={Suppliers} />  
-        <Route path="/used-machines" component={UsedMachines} />  
-        <Route path="/contacts" component={Contacts} />  
-        <Route path="/testimonials" component={Testimonials} />  
-        <Route path="/news-and-events" component={News} />  
-        <Route path="/FAQ" component={Faq} />  
-        <Footer />
+          <Route path="/suppliers" component={Suppliers} />
+          <Route path="/used-machines" component={UsedMachines} />
+          <Route path="/contacts" component={Contacts} />
+          <Route path="/testimonials" component={Testimonials} />
+          <Route path="/news-and-events" component={News} />
+          <Route path="/FAQ" component={Faq} />
+          <Route path="/exclusive-ioc" component={Ioc} />
+          <Footer />
+        </ScrollToTop>
       </Router>
     )
   }

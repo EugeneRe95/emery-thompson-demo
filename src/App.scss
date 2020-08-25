@@ -1,7 +1,7 @@
 $red: #b22234;
 $blue: #3c3b6e;
-$main-font: 'Roboto', sans-serif;
-$heading-font: 'Carter One', cursive;
+$main-font: "Roboto", sans-serif;
+$heading-font: "Carter One", cursive;
 
 html {
   height: 100%;
@@ -24,6 +24,11 @@ h6 {
 }
 body {
   overflow-x: hidden;
+}
+.container {
+  width: 100%;
+  min-width: 300px;
+  max-width: 1200px;
 }
 a {
   text-decoration: none;
@@ -261,7 +266,7 @@ footer {
     }
   }
   @media screen and (max-width: 600px) {
-    .description{
+    .description {
       font-size: 16px;
     }
     .links {
@@ -278,9 +283,10 @@ footer {
   width: 250px;
   padding: 4px;
   transition: all ease-in 200ms;
+  border: 2px solid #fff;
 
   &:hover {
-    box-shadow: 0 0 10px #000;
+    border-color: $blue;
   }
 
   img {
@@ -455,7 +461,7 @@ footer {
       }
     }
   }
-  #video-banner{
+  #video-banner {
     position: fixed;
     bottom: 50px;
     right: 0;
@@ -468,13 +474,13 @@ footer {
     box-shadow: -5px 5px 5px #000;
     text-align: right;
     z-index: 500;
-    a{
+    a {
       font-size: 18px;
-      &:hover{
+      &:hover {
         color: $blue;
       }
     }
-    button{
+    button {
       float: left;
       background: #000;
       color: #fff;
@@ -482,9 +488,86 @@ footer {
       border: none;
       border-radius: 4px;
       cursor: pointer;
-      &:hover{
+      &:hover {
         background: #fff;
         color: #000;
+      }
+    }
+  }
+}
+
+#ioc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 20px;
+  h1 {
+    margin-bottom: 30px;
+    padding: 10px;
+    border-bottom: 3px solid $blue;
+    color: $red;
+    text-align: center;
+    @media screen and (max-width: 600px) {
+      font-size: 28px;
+    }
+  }
+  .container {
+    margin: 20px 0;
+    h2,
+    h3 {
+      margin: 20px 0;
+      text-align: center;
+    }
+    figure {
+      float: right;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 15px;
+      img {
+        width: 270px;
+      }
+      figcaption {
+        color: $blue;
+        font-size: 22px;
+        text-align: center;
+        margin: 10px 0;
+        width: 250px;
+      }
+      @media screen and (max-width:530px){
+        float: none;
+      }
+    }
+    &:after {
+      content: " ";
+      display: table;
+      clear: both;
+    }
+    p {
+      margin: 15px 0;
+      a {
+        color: $red;
+        font-weight: 800;
+        text-decoration: underline;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+    table {
+      border-collapse: collapse;
+      box-shadow: 0 0 10px #000;
+      margin: 20px auto;
+      tr {
+        margin: 15px;
+      }
+      td {
+        padding: 10px;
+        border: 2px solid $blue;
+        &:hover {
+          background: $blue;
+          color: #fff;
+        }
       }
     }
   }
@@ -495,13 +578,17 @@ footer {
   flex-direction: column;
   align-items: center;
   background-color: $red;
-  h1{
-    margin-top: 30px;
+  padding: 30px 0;
+  h1 {
     color: $blue;
     background: #fff;
     padding: 5px;
     border-radius: 10px;
-
+  }
+  h2.message{
+    text-align: center;
+    margin: 20px 10px;
+    text-shadow: 0 0 1px #fff;
   }
   .freezers-container {
     background-color: #fff;
@@ -509,7 +596,7 @@ footer {
     width: 80%;
     min-width: 320px;
     max-width: 1400px;
-    margin: 40px auto;
+    margin: 20px auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -518,6 +605,76 @@ footer {
 
     .freezer-item {
       margin: 20px;
+    }
+  }
+  h3.warning {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 80%;
+    min-width: 320px;
+    max-width: 1400px;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    transition: all ease-in-out 150ms;
+    a {
+      display: inline-block;
+      width: 100%;
+    }
+    &:hover {
+      box-shadow: 0 0 10px #000;
+      background: $blue;
+      color: #fff;
+    }
+  }
+  .accessories {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 80%;
+    min-width: 320px;
+    max-width: 1000px;
+    padding: 20px;
+    margin: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-shadow: 0 0 8px #000;
+    .item {
+      max-width: 450px;
+      margin: 15px;
+      h3 {
+        text-align: center;
+        color: $red;
+      }
+      figure {
+        float: right;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+        img {
+          width: 180px;
+        }
+        figcaption {
+          margin: 5px;
+          padding: 5px;
+          background: $blue;
+          color: #fff;
+          font-size: 18px;
+          border-radius: 4px;
+        }
+        @media screen and (max-width: 530px) {
+          float: none;
+        }
+      }
+      &:after {
+        content: " ";
+        display: table;
+        clear: both;
+      }
+      p {
+        margin: 15px 0;
+      }
     }
   }
 }
@@ -590,21 +747,22 @@ footer {
 }
 #suppliers {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0;
+  h1 {
+    margin: 15px;
+    text-align: center;
+    color: #fff;
+    background: $blue;
+    padding: 5px;
+    border-radius: 10px;
+  }
   .container {
-    margin: 40px auto;
-    width: 90%;
-    max-width: 1200px;
+    margin: auto;
 
     .heading {
-      margin-bottom: 20px;
-      h1 {
-        margin: 15px;
-        text-align: center;
-        color: #fff;
-        background: $blue;
-        padding: 5px;
-        border-radius: 10px;
-      }
+      margin: 20px;
     }
 
     .suppliers {
@@ -644,30 +802,31 @@ footer {
   }
 }
 
-#used-machines{
+#used-machines {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 20px;
-  .container{
-    margin: auto;
-    width: 90%;
-    max-width: 1200px;
-    min-width: 300px;
-    h1{
-      margin-bottom: 40px;
-      padding: 10px;
-      border-bottom: 3px solid $blue;
-      color: $red;
-    }
-    h2,h3{
+
+  h1 {
+    margin-bottom: 30px;
+    padding: 10px;
+    border-bottom: 3px solid $blue;
+    color: $red;
+    text-align: center;
+  }
+  .container {
+    h2,
+    h3 {
       text-align: center;
     }
-    p{
+    p {
       margin: 15px 0;
       line-height: 22px;
     }
-    .block{
+    .block {
       margin: 20px 0 20px 0;
-      img{
+      img {
         margin: 10px;
         margin-top: 0;
         width: 300px;
@@ -679,17 +838,17 @@ footer {
         content: " ";
         display: table;
         clear: both;
-    }
-    @media screen and (max-width:600px){
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      img{
-        float: none !important;
+      }
+      @media screen and (max-width: 600px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img {
+          float: none !important;
+        }
       }
     }
-    }
-    .warning{
+    .warning {
       background: $red;
       color: #fff;
       padding: 5px;
@@ -699,9 +858,33 @@ footer {
   }
 }
 
-#testimonials, #faq, #news{
+#testimonials,
+#faq,
+#news {
   min-height: calc(100vh - 80px);
   padding: 30px 10px;
+}
+
+#faq {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    margin-bottom: 30px;
+    padding: 10px;
+    border-bottom: 3px solid $blue;
+    color: $red;
+  }
+  .container {
+    p {
+      margin: 20px 0;
+      line-height: 22px;
+      strong {
+        color: $blue;
+      }
+    }
+  }
 }
 
 #contacts {
@@ -710,7 +893,7 @@ footer {
   align-items: center;
   padding: 20px;
 
-  h1{
+  h1 {
     margin-bottom: 30px;
     color: #fff;
     background: $red;
@@ -719,9 +902,6 @@ footer {
   }
 
   .container {
-    width: 100%;
-    min-width: 300px;
-    max-width: 1200px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -751,7 +931,8 @@ footer {
       align-items: center;
       justify-content: flex-start;
       border-radius: 0px 20px 20px 0px;
-      input, textarea {
+      input,
+      textarea {
         width: 100%;
         max-width: 500px;
         min-width: 290px;
@@ -789,10 +970,11 @@ footer {
       align-items: center;
       background-position: left bottom;
       background-size: auto 100%;
-      form{
+      form {
         width: 100%;
         border-radius: 20px 20px 0 0;
-        input, textarea {
+        input,
+        textarea {
           padding: 7px;
           font-size: 16px;
           &:focus {
@@ -804,14 +986,14 @@ footer {
           margin: 15px 0 15px 0;
         }
       }
-      .about{
+      .about {
         width: 100%;
       }
-      svg{
+      svg {
         display: none;
       }
     }
-    svg{
+    svg {
       position: absolute;
       bottom: 0;
       left: 0;
@@ -820,7 +1002,7 @@ footer {
       height: 200px;
     }
   }
-  #map{
+  #map {
     width: 70%;
     height: 500px;
     min-width: 290px;
@@ -828,14 +1010,14 @@ footer {
     margin-top: 50px;
     box-shadow: 0 0 15px #000;
   }
-  #contacts-info{
+  #contacts-info {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
     min-width: 300px;
     max-width: 1200px;
-    h1{
+    h1 {
       text-align: center;
       text-transform: uppercase;
       margin: 40px 0;
@@ -846,33 +1028,33 @@ footer {
       border-radius: 15px;
       box-shadow: 0 0 10px #000;
     }
-    .item{
+    .item {
       width: 100%;
       display: flex;
       justify-content: space-between;
       align-items: center;
       margin-bottom: 15px;
-      p{
+      p {
         margin: 10px 0;
       }
-      a{
+      a {
         color: $blue;
         font-weight: 700;
         text-decoration: underline;
-        &:hover{
+        &:hover {
           text-decoration: none;
         }
       }
-      img{
+      img {
         width: 150px;
         height: 70px;
         margin-left: 20px;
         display: block;
       }
-      @media screen and (max-width:500px) {
+      @media screen and (max-width: 500px) {
         flex-direction: column;
         align-items: flex-start;
-        img{
+        img {
           margin: 10px;
         }
       }
