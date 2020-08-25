@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7bde7451c75fade5d00709889c2f0cbe",
+    "revision": "6bcce73e8211586ecd3576f128ed1bd8",
     "url": "/emery-thompson-demo/index.html"
   },
   {
-    "revision": "e0c9a7a87f2748ef35fb",
+    "revision": "693233ccf39a5833ad8f",
     "url": "/emery-thompson-demo/static/css/2.81eef1ff.chunk.css"
   },
   {
-    "revision": "b312bd096e2b779ea6e6",
-    "url": "/emery-thompson-demo/static/css/main.cd8b3529.chunk.css"
+    "revision": "3e9be5480e8e3d010c3d",
+    "url": "/emery-thompson-demo/static/css/main.cc3fe9d0.chunk.css"
   },
   {
-    "revision": "e0c9a7a87f2748ef35fb",
-    "url": "/emery-thompson-demo/static/js/2.f9644c23.chunk.js"
+    "revision": "693233ccf39a5833ad8f",
+    "url": "/emery-thompson-demo/static/js/2.ad2cfef7.chunk.js"
   },
   {
     "revision": "da75538c52411804769b514107a743de",
-    "url": "/emery-thompson-demo/static/js/2.f9644c23.chunk.js.LICENSE.txt"
+    "url": "/emery-thompson-demo/static/js/2.ad2cfef7.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b312bd096e2b779ea6e6",
-    "url": "/emery-thompson-demo/static/js/main.7b01c4a1.chunk.js"
+    "revision": "3e9be5480e8e3d010c3d",
+    "url": "/emery-thompson-demo/static/js/main.d4f9a35d.chunk.js"
   },
   {
     "revision": "c7bc805451346cb29b8c",
@@ -100,6 +100,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/emery-thompson-demo/static/media/flag.9ca259c7.png"
   },
   {
+    "revision": "5aac0caf912417b246cab958f07fc857",
+    "url": "/emery-thompson-demo/static/media/ioc.5aac0caf.jpg"
+  },
+  {
     "revision": "7d167d33d259c9ba2b51b08b52004b6c",
     "url": "/emery-thompson-demo/static/media/l1.7d167d33.png"
   },
@@ -154,6 +158,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "2feb69ccb596730c72920c6ba3e37ef8",
     "url": "/emery-thompson-demo/static/media/revicons.2feb69cc.eot"
+  },
+  {
+    "revision": "008966341ae8c1053ea9b181e373f72a",
+    "url": "/emery-thompson-demo/static/media/rim1.00896634.jpg"
+  },
+  {
+    "revision": "bf522930da24f6ee0aff3f53f3743291",
+    "url": "/emery-thompson-demo/static/media/stand.bf522930.png"
   },
   {
     "revision": "f4590b61f42f08aeea4c1da1428d12a4",
